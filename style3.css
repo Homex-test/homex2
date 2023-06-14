@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'poppins', sans-serif; */
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent);
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.cart-icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+.background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: #fff;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: " ";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+
+}
+
+nav ul li a:hover::after {
+    width: 50%;
+
+}
+
+.text-box {
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+
+.text-box p {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.text-box h1 {
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(images/back.png);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.social-icons {
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+
+.social-icons img {
+    width: 25px;
+    display: block;
+    margin: 25px 5px;
+}
+
+.about {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3), transparent), url(images/table.jfif);
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    position: relative;
+
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.about hr {
+
+    margin: auto;
+    border: 5px solid #fff;
+    width: 25%;
+}
+
+.about img {
+    border-radius: 50%;
+    text-align: center;
+    /* margin: auto; */
+    width: 256px;
+    padding: 20px 20px 20px 20px;
+}
+
+.about video {
+    text-align: center;
+    margin: auto;
+    width: 256px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 55%;
+}
+
+.about p {
+    padding: 50px;
+}
+
+.likes {
+    padding-top: 100px;
+    text-align: left;
+}
+
+.likes h2 {
+    padding: 20px;
+    text-align: center;
+}
+
+.likes hr {
+    border: dotted;
+    width: 30px;
+}
+
+table {
+    padding-top: 20px;
+    width: 100%;
+}
+
+tr {
+    height: 45px;
+}
+
+#tb {
+    padding-top: 50px;
+}
+
+.containerii {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact-box {
+    color: white;
+    background: black;
+    display: flex;
+}
+
+.contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+    background: #E4DCCF;
+    color: #090909;
+}
+
+.contact-right {
+    flex-basis: 40%;
+    padding: 40px;
+    background: gray;
+}
+
+.containerii h1 {
+    margin-bottom: 10px;
+}
+
+.containerii p {
+    margin-bottom: 40px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+}
+
+.input-group {
+    margin: 10px;
+}
+
+input {
+    width: 250px;
+    border-bottom: 1px solid #090909;
+    outline: none;
+    padding-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #090909;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: white;
+}
+
+button {
+    background: grey;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+
+.contact-left h3 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+}
